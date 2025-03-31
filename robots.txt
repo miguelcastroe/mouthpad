@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://miguelcastroe.github.io/mouthpad/sitemap.xml
