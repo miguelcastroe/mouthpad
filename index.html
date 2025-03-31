@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MouthPad^ | Miguel Castro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Space Mono', monospace;
+      background-color: #ffffff;
+      color: #1a1a1a;
+      margin: 0;
+      padding: 0;
+      font-size: 12px;
+      line-height: 1.8;
+    }
+    main.project {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 3rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      position: relative;
+    }
+    h1, h2, h3 {
+      font-weight: normal;
+      text-transform: uppercase;
+      color: #000000;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      font-size: 12px;
+      margin-top: -1rem;
+      font-weight: bold;
+    }
+    .linkedin-icon {
+      position: absolute;
+      top: 3rem;
+      right: 1rem;
+    }
+    .linkedin-icon img {
+      width: 18px;
+      height: 18px;
+      filter: grayscale(100%) brightness(0);
+    }
+    .media a {
+      display: block;
+      margin: 1rem 0;
+    }
+    .media img {
+      width: 100%;
+      border: 1px solid #aaa;
+      cursor: pointer;
+    }
+    .bio-intro {
+      line-height: 2.2;
+      color: #555;
+    }
+    .bio-intro a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid #888;
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+      margin: 1rem 0;
+      border: none;
+    }
+    .glossary {
+      font-size: 11px;
+      line-height: 1.6;
+      margin-top: 3rem;
+      border-top: 1px solid #aaa;
+      padding-top: 1rem;
+    }
+    footer {
+      font-size: 12px;
+      color: #555;
+      border-top: 1px solid #aaa;
+      padding-top: 1rem;
+    }
+    footer a {
+      color: #777;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #000;
+    }
+
+    /* Lightbox */
+    .lightbox-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,0.85);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 10000;
+    }
+    .lightbox-overlay img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 28px;
+      font-weight: bold;
+      color: #fff;
+      cursor: pointer;
+      background: #000;
+      border-radius: 20px;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <main class="project">
+    <a href="https://www.linkedin.com/in/miguelcastroe/" class="linkedin-icon" title="See full profile">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Icon" />
+    </a>
+
+    <header>
+      <h1>MouthPad^</h1>
+      <p class="subtitle">Tongue-operated interface for digital freedom</p>
+      <p class="bio-intro">
+        <a href="https://www.linkedin.com/in/miguelcastroe/" title="See full profile" style="border-bottom: 1px solid #888;"><strong>Miguel Castro</strong></a> is a Creative & Research Director who creates at the intersection of human sensitivity and technological potential. Known for his reductionist approach and systems-level storytelling, he led MouthPad^ to win the Cannes Lions Grand Prix in Innovation. His work uncovers hidden systems, reframes interface logic, and makes dignity a design principle.
+      </p>
+    </header>
+
+    <div class="media">
+      <img src="mouthpad_1.png" alt="MouthPad intraoral device render" onclick="openLightbox(this.src, this.alt)">
+    </div>
+    <div class="media">
+      <img src="mouthpad_2.png" alt="MouthPad function diagram" onclick="openLightbox(this.src, this.alt)">
+    </div>
+    <div class="media">
+      <img src="mouthpad_3.png" alt="MouthPad pitch board" onclick="openLightbox(this.src, this.alt)">
+    </div>
+
+    <iframe src="https://player.vimeo.com/video/951744690" allowfullscreen title="MouthPad^ Launch Video"></iframe>
+
+    <section class="glossary">
+      <h2>Glossary</h2>
+      <ul>
+        <li><strong>Intraoral Interface</strong> — A digital interface positioned inside the mouth.</li>
+        <li><strong>Latent Interface Space</strong> — Untapped anatomical or spatial domain for interaction.</li>
+        <li><strong>Biomimetic Prototypes</strong> — Designs modeled after biological functions.</li>
+        <li><strong>Spatial Strategy</strong> — Use of overlooked physical space as a foundation for interface logic.</li>
+        <li><strong>Embodied Interface</strong> — An interface that integrates with bodily movement and control.</li>
+        <li><strong>Systemic Inclusion</strong> — Accessibility designed into the full architecture of the product, not added on top.</li>
+        <li><strong>Assistive Technology</strong> — Devices or systems that enhance ability, access, and autonomy.</li>
+        <li><strong>Gesture Logic</strong> — Rule system interpreting physical actions (like tongue gestures) as digital input.</li>
+        <li><strong>Cultural Reprogramming</strong> — A shift in meaning and perception of what a device or category represents.</li>
+        <li><strong>Protagonist Design</strong> — A design philosophy that centers users as empowered agents in control.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© Miguel Castro, 2025 — <a href="#">Project B</a> | <a href="#">Project C</a> | <a href="#">Project D</a> | <a href="#">Project E</a></p>
+    </footer>
+  </main>
+
+  <div class="lightbox-overlay" id="lightbox">
+    <span class="lightbox-close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script>
+    function openLightbox(src, alt) {
+      document.getElementById("lightbox-img").src = src;
+      document.getElementById("lightbox-img").alt = alt;
+      document.getElementById("lightbox").style.display = "flex";
+    }
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
+</body>
+</html>
